@@ -111,23 +111,69 @@ footer{padding:44px 0 105px;border-top:1px solid var(--line);color:#717582;font-
 
 <script>
 const PAYMENT_URL_299 = "https://rzp.io/rzp/Hbjj45C";
-const PAYMENT_URL_499 = const PAYMENT_URL_299 = "https://rzp.io/rzp/Hbjj45C";
-const OFFER_DURATION = (2*60*60 + 25*60)*1000;
+const PAYMENT_URL_499 = "PASTE_YOUR_499_PAYMENT_LINK_HERE";
 
+/* 27-minute launch timer — resets on every fresh page load */
+const OFFER_DURATION = 27 * 60 * 1000;
 const END = Date.now() + OFFER_DURATION;
-function update(){
-  let diff=Math.max(0,END-Date.now());
-  const expired=diff<=0;
-  const h=Math.floor(diff/3600000),m=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-  const t=`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-  ['topTimer','heroTimer','priceTimer'].forEach(id=>{const e=document.getElementById(id);if(e)e.textContent=t;});
-  const amount=document.getElementById('amount'),btn=document.getElementById('buyBtn'),status=document.getElementById('statusText');
-  if(amount)amount.textContent=expired?'₹499':'₹299';
-  if(btn)btn.textContent=expired?'GET PAGEFLIP — ₹499':'GET PAGEFLIP — ₹299';
-  if(status)status.textContent=expired?'Launch price expired — current price ₹499.':'₹299 launch access is active.';
-  if(btn)btn.onclick=(e)=>{e.preventDefault();const url=expired?PAYMENT_URL_499:PAYMENT_URL_299;if(url.includes('PASTE_YOUR')){alert('Payment link is not connected yet. Add the correct ₹299/₹499 checkout URLs in the code before launch.');return;}window.location.href=url;};
+
+function update() {
+  let diff = Math.max(0, END - Date.now());
+  const expired = diff <= 0;
+
+  const m = Math.floor(diff / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+
+  const t = `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+
+  ['topTimer','heroTimer','priceTimer'].forEach(id => {
+    const e = document.getElementById(id);
+    if (e) e.textContent = t;
+  });
+
+  const amount = document.getElementById('amount');
+  const btn = document.getElementById('buyBtn');
+  const status = document.getElementById('statusText');
+
+  if (amount) {
+    amount.textContent = expired ? '₹499' : '₹299';
+  }
+
+  if (btn) {
+    btn.textContent = expired
+      ? 'GET PAGEFLIP — ₹499'
+      : 'GET PAGEFLIP — ₹299';
+
+    btn.onclick = null;
+
+    if (!expired) {
+      btn.onclick = function(e) {
+        e.preventDefault();
+        window.location.href = PAYMENT_URL_299;
+      };
+    } else {
+      btn.onclick = function(e) {
+        e.preventDefault();
+
+        if (PAYMENT_URL_499.includes('PASTE_YOUR')) {
+          alert('₹499 payment link will be connected soon.');
+          return;
+        }
+
+        window.location.href = PAYMENT_URL_499;
+      };
+    }
+  }
+
+  if (status) {
+    status.textContent = expired
+      ? '₹299 launch offer expired — current price ₹499.'
+      : '₹299 launch access is active — offer expires when the timer reaches 00:00.';
+  }
 }
-update();setInterval(update,1000);
+
+update();
+setInterval(update, 1000);
 </script>
 </body>
 </html>
