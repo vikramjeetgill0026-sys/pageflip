@@ -180,7 +180,7 @@ body{background:#080b16;color:#f5f7ff}header{background:#080b16;border-color:#26
     <div class="cd" id="cd" hidden><b>Launch price ends in <span id="cdTime">--</span></b><br>27 minutes ke baad price ₹<span data-regular-price>499</span> ho jayega.</div>
     <ul><li><strong>FREE: Auto Viral Reel Finder &amp; Downloader</strong></li><li>Workflow training and setup guide</li><li>Content research system</li><li>Content bank and publishing workflow</li><li>Growth tracking framework</li><li>Page-building and selling roadmap</li></ul>
     <a class="btn" data-cta id="buyBtn" href="https://rzp.io/rzp/flippagepayment">Get PageFlip for ₹299</a>
-    <p class="fine">Secure payment via Razorpay. Results depend on your niche, effort and platform rules. Launch price ₹299 first visit se 27 minutes tak rahega. Timer khatam hote hi price automatically ₹499 ho jayega. PageFlip does not guarantee views, followers, income or a resale price. Use only content you own or have permission to use.</p>
+    <p class="fine">Secure payment via Razorpay. Results depend on your niche, effort and platform rules. ₹299 launch offer first visit se 27 minutes tak rahega. Timer khatam hote hi price automatically ₹499 ho jayega. PageFlip does not guarantee views, followers, income or a resale price. Use only content you own or have permission to use.</p>
   </div>
 </div></section>
 
@@ -225,7 +225,7 @@ body{background:#080b16;color:#f5f7ff}header{background:#080b16;border-color:#26
 /* ===== EDIT THESE ===== */
 const CONFIG = {
   // Real launch deadline (IST). Leave "" to run without a countdown (no strike-through price shown).
-  visitorMinutes: 27,   // each visitor gets 27 min from first visit; does NOT reset on refresh. Set 0 to use endsAt instead
+  visitorMinutes: 27,   // ₹299 for 27 minutes from first visit; then ₹499. Timer persists across refreshes.
   endsAt: "",           // optional fixed shared deadline, e.g. "2026-10-20T23:59:00+05:30"
   launch:  { price: 299, url: "https://rzp.io/rzp/flippagepayment" },
   regular: { price: 499, url: "https://rzp.io/rzp/fZ79TxBJ" }
@@ -240,8 +240,8 @@ function fmt(ms){
 function getEnd(){
   if (CONFIG.visitorMinutes > 0){
     try{
-      let t = Number(localStorage.getItem("pf_offer_start"));
-      if (!t){ t = Date.now(); localStorage.setItem("pf_offer_start", t); }
+      let t = Number(localStorage.getItem("pf_offer_start_v2"));
+      if (!t){ t = Date.now(); localStorage.setItem("pf_offer_start_v2", t); }
       return t + CONFIG.visitorMinutes*60000;
     }catch(e){ return 0; } /* storage blocked: show no timer rather than a resetting one */
   }
