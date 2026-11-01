@@ -133,16 +133,89 @@ footer{background:#050505;border-top:1px solid #302719}.disc{border-color:#30271
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:30px;padding:54px 0 44px;min-height:0}.hero h1{font-size:clamp(54px,13vw,78px)}.hero-placeholder{min-height:260px}.media-strip{padding-bottom:52px}}
 @media(max-width:560px){.nav{height:68px}.hero h1{font-size:clamp(52px,14vw,72px)}.lead{font-size:21px}.price{padding:28px 21px}.amt strong{font-size:66px}.media-placeholder{min-height:230px}.wide-placeholder{min-height:150px}.sticky{padding:10px 14px calc(10px + env(safe-area-inset-bottom))}}
 
-.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.video-placeholder{min-height:430px;background:linear-gradient(145deg,#080808,#111);border-color:#292929;border-radius:24px}.screenshot-placeholder{min-height:270px;background:linear-gradient(145deg,#17130d,#0c0c0c);border-color:#4a391c}.promise-card{display:flex;gap:24px;align-items:center;padding:30px;border:1px solid #175b35;border-radius:24px;background:linear-gradient(120deg,#0d1b13,#111);max-width:900px;margin:auto}.promise-icon{flex:0 0 76px;height:76px;border-radius:50%;display:grid;place-items:center;background:#123d27;color:#42df83;font-size:42px}.promise-card h3{font-size:26px}.promise-card p{color:#b7c5bb;margin:8px 0 0}.deal-section{background:#090909}.deal-card{max-width:760px;margin:auto;text-align:center;padding:54px 32px;border:1px solid #775a25;border-radius:30px;background:radial-gradient(ellipse at top,#21190d,#111 65%)}.deal-card h2{font-size:clamp(36px,6vw,58px)}.deal-card>p:not(.eyebrow){color:#aaa}.deal-card .amt{justify-content:center;margin:28px 0}.deal-card .btn{width:min(100%,520px)}.deal-note{color:#999;font-size:14px;margin-top:18px}.whatsapp-band{text-align:center;padding:54px 0;background:linear-gradient(110deg,#171309,#0c0c0c);border-block:1px solid #493719}.whatsapp-band h2{font-size:clamp(26px,4vw,38px)}.whatsapp-band p{color:#aaa;margin:10px 0 22px}@media(max-width:600px){.media-grid{gap:12px}.video-placeholder{min-height:260px}.screenshot-placeholder{min-height:170px}.promise-card{padding:22px;gap:14px;align-items:flex-start}.promise-icon{flex-basis:54px;height:54px;font-size:30px}.deal-card{padding:38px 20px}}</style>
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.video-placeholder{min-height:430px;background:linear-gradient(145deg,#080808,#111);border-color:#292929;border-radius:24px}.screenshot-placeholder{min-height:270px;background:linear-gradient(145deg,#17130d,#0c0c0c);border-color:#4a391c}.promise-card{display:flex;gap:24px;align-items:center;padding:30px;border:1px solid #175b35;border-radius:24px;background:linear-gradient(120deg,#0d1b13,#111);max-width:900px;margin:auto}.promise-icon{flex:0 0 76px;height:76px;border-radius:50%;display:grid;place-items:center;background:#123d27;color:#42df83;font-size:42px}.promise-card h3{font-size:26px}.promise-card p{color:#b7c5bb;margin:8px 0 0}.deal-section{background:#090909}.deal-card{max-width:760px;margin:auto;text-align:center;padding:54px 32px;border:1px solid #775a25;border-radius:30px;background:radial-gradient(ellipse at top,#21190d,#111 65%)}.deal-card h2{font-size:clamp(36px,6vw,58px)}.deal-card>p:not(.eyebrow){color:#aaa}.deal-card .amt{justify-content:center;margin:28px 0}.deal-card .btn{width:min(100%,520px)}.deal-note{color:#999;font-size:14px;margin-top:18px}.whatsapp-band{text-align:center;padding:54px 0;background:linear-gradient(110deg,#171309,#0c0c0c);border-block:1px solid #493719}.whatsapp-band h2{font-size:clamp(26px,4vw,38px)}.whatsapp-band p{color:#aaa;margin:10px 0 22px}@media(max-width:600px){.media-grid{gap:12px}.video-placeholder{min-height:260px}.screenshot-placeholder{min-height:170px}.promise-card{padding:22px;gap:14px;align-items:flex-start}.promise-icon{flex-basis:54px;height:54px;font-size:30px}.deal-card{padding:38px 20px}}
+/* Screenshot-matched mobile-first storefront layout */
+:root{--gold:#d9b44a;--gold-d:#8a641f}
+.hero{display:flex!important;flex-direction:column;align-items:center;text-align:center;gap:26px;padding:44px 0 24px!important;min-height:0}
+.hero-copy{width:100%;max-width:850px;margin:auto;text-align:center}
+.hero .social-proof{margin:0 auto 18px}
+.hero .eyebrow{margin-bottom:12px}
+.hero h1{font-size:clamp(48px,9vw,86px);line-height:1.04;max-width:100%;margin:0 auto;letter-spacing:-.045em}
+.hero .lead{max-width:720px;margin:18px auto 24px;text-align:center;font-size:clamp(18px,2.4vw,24px)}
+.hero .cta-row{justify-content:center}
+.hero .note{margin:14px auto 0}
+.hero-placeholder{width:100%;max-width:900px;min-height:260px}
+.media-strip{padding:10px 0 54px}
+.wide-placeholder{min-height:300px}
+#action{padding:70px 0 82px;background:#0b0b0b}
+#action .head{text-align:center;max-width:none;margin:0 auto 42px}
+#action .head h2{font-size:clamp(36px,6vw,58px);font-weight:800}
+#action .head h2:before{content:"👀 ";font-size:.9em}
+#action .head p{display:none}
+.media-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.video-placeholder{min-height:420px;aspect-ratio: .78;background:#000;border:2px solid #252525;border-radius:28px;position:relative}
+.video-placeholder:after{content:"";width:104px;height:104px;border-radius:50%;background:#252525;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%)}
+.video-placeholder:before{content:"";position:absolute;z-index:1;left:calc(50% + 5px);top:50%;transform:translate(-50%,-50%);border-top:22px solid transparent;border-bottom:22px solid transparent;border-left:34px solid #fff}
+.video-placeholder span,.video-placeholder small{position:absolute;opacity:0}
+#preview{padding:20px 0 78px}
+#preview .head{text-align:center;margin:0 auto 28px}
+#preview .head h2{font-size:clamp(30px,5vw,46px)}
+.screenshots{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.screenshot-placeholder{aspect-ratio:1.15;min-height:0;border-radius:24px;background:#f1f1f1;border:2px solid #333;color:#222;letter-spacing:0}
+.screenshot-placeholder small{color:#555}
+.promise-card{max-width:900px;min-height:300px;padding:42px 32px;border:1px solid #176238;background:#0d1b13;border-radius:34px}
+.promise-card h3{font-size:clamp(25px,4vw,36px)}
+.promise-card p{font-size:clamp(17px,2.5vw,24px);line-height:1.6;color:#bdbdbd}
+.deal-card{max-width:900px;padding:70px 34px 58px;border-radius:44px;border:2px solid #59431c;background:linear-gradient(145deg,#1a1a1a,#111);text-align:center}
+.deal-card h2{font-size:clamp(42px,7vw,68px)}
+.deal-card>p:not(.eyebrow){font-size:clamp(18px,2.6vw,26px);line-height:1.5}
+.deal-card .amt{justify-content:center;margin:46px 0}
+.deal-card .amt strong{font-size:clamp(68px,11vw,104px)}
+.deal-card .was{font-size:clamp(24px,4vw,36px)}
+.deal-card .btn{min-height:90px;font-size:clamp(22px,3vw,34px);width:100%;max-width:720px}
+.deal-note{font-size:18px!important}
+.whatsapp-band{padding:70px 0;background:linear-gradient(120deg,#17140d,#0b0b0b);text-align:center}
+.whatsapp-band h2{font-family:Georgia,serif;font-size:clamp(26px,4vw,40px)}
+.whatsapp-band .btn{background:#20c96b;border:0;color:white;box-shadow:none;border-radius:18px;padding:22px 36px;font-size:22px}
+footer .foot{align-items:center}
+.sticky{display:flex;position:fixed;inset:auto 0 0 0;z-index:40;align-items:center;gap:14px;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(10,10,10,.97);border-top:2px solid #4e3b19}
+.sticky .sticky-price{width:34%;font-size:clamp(14px,2vw,20px);line-height:1.35;color:#fff;font-weight:700}
+.sticky .sticky-price b{color:#20c96b}
+.sticky .sticky-price small{display:block;color:#d6a43b;font-weight:500;font-size:13px;margin-top:5px}
+.sticky .btn{flex:1;min-width:0;padding:18px 8px;font-size:clamp(14px,2.3vw,22px);white-space:nowrap}
+.whatsapp-float{position:fixed;right:18px;bottom:100px;z-index:45;width:76px;height:76px;border-radius:50%;background:#20c96b;color:#fff;display:grid;place-items:center;text-decoration:none;box-shadow:0 5px 25px #0008;font-size:38px;border:0}
+@media(max-width:600px){
+ .hero{padding:38px 0 20px!important;gap:20px}
+ .hero h1{font-size:clamp(44px,12vw,62px)}
+ .hero-placeholder{min-height:190px}
+ .wide-placeholder{min-height:190px}
+ .media-grid{gap:14px}
+ .video-placeholder{min-height:310px;aspect-ratio:.72;border-radius:24px}
+ .video-placeholder:after{width:82px;height:82px}
+ .video-placeholder:before{border-top-width:17px;border-bottom-width:17px;border-left-width:26px}
+ .screenshots{gap:14px}
+ .screenshot-placeholder{aspect-ratio:1.02}
+ .promise-card{padding:28px 22px;min-height:0;gap:18px}
+ .promise-icon{flex-basis:62px;height:62px}
+ .deal-card{padding:46px 20px 38px;border-radius:34px}
+ .deal-card .amt{margin:32px 0}
+ .deal-card .btn{min-height:82px}
+ .sticky{gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+ .sticky .sticky-price{width:30%;font-size:15px}
+ .sticky .sticky-price small{font-size:12px}
+ .sticky .btn{padding:17px 7px;font-size:15px}
+ .whatsapp-float{width:66px;height:66px;right:14px;bottom:105px;font-size:32px}
+}
+.store-brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;letter-spacing:.08em;font-family:Georgia,serif;font-size:20px;color:#d8b34d}.store-brand b{color:#fff;font-weight:400}.store-brand small{font-family:Figtree,sans-serif;font-size:10px;letter-spacing:.16em;color:#8d7540;margin-top:7px;font-style:italic}.store-icons{display:flex;align-items:center;gap:24px}.store-icons a{font-size:36px;color:#ccc;text-decoration:none;line-height:1}.nav nav{display:none}@media(max-width:600px){.store-brand{font-size:16px}.store-brand small{font-size:8px}.store-icons{gap:16px}.store-icons a{font-size:29px}}</style>
 </head>
 <body>
 
 <div class="bar" id="bar" hidden>₹299 launch offer ends in <b id="barTime">--</b>. Regular price ₹<span data-regular-price>499</span>.</div>
 
 <header><div class="wrap nav">
-  <a class="logo" href="#">Page<i>Flip</i></a>
+  <a class="store-brand" href="#"><span>DIGI <b>IMPROVEMENT</b></span><small>IMPROVING YOUR DIGITAL WORLD.</small></a>
   <nav><a href="#how">How it works</a><a href="#included">What's included</a><a href="#sell">Selling a page</a><a href="#faq">FAQ</a></nav>
-  <a class="btn" href="#price">Get access</a>
+  <div class="store-icons" aria-label="Store navigation"><a href="#preview" aria-label="Search">⌕</a><a href="#included" aria-label="Favorites">♡</a><a href="#price" aria-label="Cart">♧</a><a href="#faq" aria-label="Menu">☰</a></div>
 </div></header>
 
 <main>
@@ -211,7 +284,7 @@ footer{background:#050505;border-top:1px solid #302719}.disc{border-color:#30271
   </div>
 </div></section>
 
-<section class="alt"><div class="wrap"><div class="promise-card"><div class="promise-icon">✓</div><div><h3>Secure Checkout. Human Support.</h3><p>Pay securely through Razorpay. For access or payment help, our support team is one WhatsApp message away.</p></div></div></div></section><section class="deal-section"><div class="wrap"><div class="deal-card"><p class="eyebrow">LIMITED-TIME LAUNCH OFFER</p><h2>Don't Miss This Deal ✦</h2><p>Get the PageFlip workflow and start building a repeatable content process.</p><div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was">₹499</span></div><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">Get PageFlip for ₹299</a><p class="deal-note">Secure Razorpay payment · One-time purchase</p></div></div></section><section id="price" class="price-sec"><div class="wrap">
+<section class="alt"><div class="wrap"><div class="promise-card"><div class="promise-icon">✓</div><div><h3>Secure Checkout. Human Support.</h3><p>Pay securely through Razorpay. For access or payment help, our support team is one WhatsApp message away.</p></div></div></div></section><section class="deal-section"><div class="wrap"><div class="deal-card"><p class="eyebrow">LIMITED-TIME OFFER</p><h2>Don't Miss This Deal 🔥</h2><p>Grab the PageFlip toolkit before the launch offer ends.</p><div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was">₹<span data-regular-price>499</span></span></div><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">🔥 GET INSTANT ACCESS</a><p class="deal-note">🔒 Secure payment · ⚡ Instant access · 💎 Lifetime access</p></div></div></section><section id="price" class="price-sec"><div class="wrap">
   <div class="price">
     <h2>PageFlip Starter</h2><p class="sub">The complete build and growth system. One payment, no subscription.</p>
     <div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was" id="was" hidden>₹<span data-regular-price>499</span></span></div>
@@ -257,7 +330,7 @@ footer{background:#050505;border-top:1px solid #302719}.disc{border-color:#30271
   <p class="disc">Results vary. PageFlip is not affiliated with, endorsed by or sponsored by Instagram or Meta. Platform rules can change; you are responsible for following them and for the content you publish.</p>
 </div></footer>
 
-<div class="sticky"><a class="btn" data-cta href="#price">Get PageFlip for ₹299</a></div>
+<div class="sticky"><div class="sticky-price">₹<span data-now-price>299</span> <b>· Launch offer</b><small>⌛ Ends in <span id="stickyTime">--:--</span></small></div><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">GET INSTANT ACCESS</a></div><a class="whatsapp-float" href="https://wa.me/918689011123?text=Hi%20PageFlip%2C%20I%20need%20help." aria-label="Chat on WhatsApp">◉</a>
 
 <script>
 /* ===== EDIT THESE ===== */
@@ -310,6 +383,7 @@ function render(){
   });
 
   const showTimer = hasTimer && launchLive;
+  const stickyTime = document.getElementById("stickyTime"); if (stickyTime) stickyTime.textContent = hasTimer ? (launchLive ? fmt(left) : "Offer ended") : "--:--";
   document.getElementById("bar").hidden = !showTimer;
   document.getElementById("cd").hidden = !showTimer;
   document.getElementById("was").hidden = !showTimer;
@@ -317,6 +391,7 @@ function render(){
     const t = fmt(left);
     document.getElementById("barTime").textContent = t;
     document.getElementById("cdTime").textContent = t;
+    const st = document.getElementById("stickyTime"); if (st) st.textContent = t;
   }
 }
 render();
