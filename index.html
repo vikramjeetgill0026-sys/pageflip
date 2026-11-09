@@ -228,10 +228,8 @@ footer .foot{align-items:center}
 .pf-review-card{width:330px;flex-basis:330px;min-height:190px;padding:24px}.pf-stars{color:#ffd400;font-size:19px;letter-spacing:2px}.pf-review{color:#ddd;line-height:1.55;margin-top:10px}.pf-person{margin-top:16px;font-weight:800;color:#fff}.pf-person small{color:#35d978;margin-left:5px}
 @keyframes pfRightLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 11px))}}
 @media(prefers-reduced-motion:reduce){.pf-track{animation:none}}
-/* FINAL REFERENCE-ONLY MODE: render only the requested PageFlip sections. */
+/* FINAL REFERENCE-ONLY MODE: keep the chosen PageFlip styling, while preserving all original sections/actions. */
 body{background:#05060a!important;color:#fff!important}
-body main>section:not(.hero):not(#pages-built):not(#reviews){display:none!important}
-footer,.whatsapp-float{display:none!important}
 .hero{background:#05060a!important}
 .hero .media-placeholder{min-height:390px;border:0!important;border-radius:0!important;background:radial-gradient(circle at 62% 52%,#241a08 0%,#11100b 38%,#05060a 72%)!important;box-shadow:none!important}
 .hero .media-placeholder span,.hero .media-placeholder small{display:none!important}
