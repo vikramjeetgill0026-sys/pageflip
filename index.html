@@ -227,7 +227,47 @@ footer .foot{align-items:center}
 .pf-card{width:270px;flex:0 0 270px;overflow:hidden;border:1px solid #454557;border-radius:22px;background:#11131d;transform:scale(.91);opacity:.62;transition:.45s;box-shadow:none}.pf-card.is-main{transform:scale(1.05);opacity:1;border-color:#8f35ff;box-shadow:0 0 34px #8f35ff55}.pf-card .shot{height:335px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#171225,#0c0d14);color:#9b42ff;font-weight:800;font-size:12px;letter-spacing:.08em}.pf-card .cap{padding:14px}.pf-card .cap b{display:block;color:#fff}.pf-card .cap small{display:block;color:#999;margin-top:4px}
 .pf-review-card{width:330px;flex-basis:330px;min-height:190px;padding:24px}.pf-stars{color:#ffd400;font-size:19px;letter-spacing:2px}.pf-review{color:#ddd;line-height:1.55;margin-top:10px}.pf-person{margin-top:16px;font-weight:800;color:#fff}.pf-person small{color:#35d978;margin-left:5px}
 @keyframes pfRightLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 11px))}}
-@media(prefers-reduced-motion:reduce){.pf-track{animation:none}}</style>
+@media(prefers-reduced-motion:reduce){.pf-track{animation:none}}
+/* FINAL REFERENCE-ONLY MODE: render only the requested PageFlip sections. */
+body{background:#05060a!important;color:#fff!important}
+body main>section:not(.hero):not(#pages-built):not(#reviews){display:none!important}
+footer,.whatsapp-float{display:none!important}
+.hero{background:#05060a!important}
+.hero .media-placeholder{min-height:390px;border:0!important;border-radius:0!important;background:radial-gradient(circle at 62% 52%,#241a08 0%,#11100b 38%,#05060a 72%)!important;box-shadow:none!important}
+.hero .media-placeholder span,.hero .media-placeholder small{display:none!important}
+.pf-offer{max-width:920px!important;margin:18px auto 0!important;padding:30px 20px!important;border:1px solid #4b2688!important;border-radius:24px!important;background:linear-gradient(145deg,#130b20,#08090f)!important;text-align:center!important}
+.pf-offer .kicker{background:linear-gradient(90deg,#7b18ff,#9f20ff)!important;color:#fff!important}
+.pf-offer h2{color:#fff!important}
+.pf-offer p{display:none!important}
+.pf-price .new{color:#fff!important}
+.pf-price .save{background:#25e36f!important;color:#07100a!important}
+.pf-buy{background:linear-gradient(90deg,#ffd400,#ffea38)!important;color:#070707!important;border:1px solid #ffe94a!important}
+.pf-benefits{max-width:920px!important}
+.pf-benefit{background:#0f111a!important;border-color:#2b2b3d!important}
+.pf-benefit b{color:#fff!important}
+.pf-benefit small{display:none!important}
+.pf-slider{padding:58px 0!important;background:linear-gradient(180deg,#08060f,#10071e)!important}
+.pf-slider.alt-bg{background:#08090d!important}
+.pf-slider-head p{display:none!important}
+.pf-slider-head .kicker{background:linear-gradient(90deg,#7b18ff,#a11cff)!important;color:#fff!important;border-color:#b34dff!important}
+.pf-slider-head h2{color:#fff!important}
+.pf-slider-head h2 span{color:#ffd400!important}
+.pf-card{background:#11131d!important;border-color:#454557!important}
+.pf-card.is-main{border-color:#8f35ff!important;box-shadow:0 0 34px #8f35ff55!important}
+.pf-card .cap{display:none!important}
+.pf-card .shot{height:360px!important;background:linear-gradient(145deg,#171225,#0c0d14)!important;color:transparent!important}
+.pf-review-card{min-height:190px!important}
+.pf-review-card .pf-review{color:#ddd!important}
+.sticky{background:#0d0715!important;border-top:1px solid #5a2b8e!important}
+.sticky .btn{background:linear-gradient(90deg,#ffd400,#ffea38)!important;color:#070707!important}
+@media(max-width:650px){
+ .hero .media-placeholder{min-height:235px!important}
+ .pf-offer{margin-top:12px!important;padding:24px 14px!important}
+ .pf-benefits{grid-template-columns:repeat(2,1fr)!important}
+ .pf-slider{padding:42px 0!important}
+ .pf-card .shot{height:300px!important}
+}
+</style>
 </head>
 <body>
 
