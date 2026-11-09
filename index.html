@@ -215,44 +215,20 @@ footer .foot{align-items:center}
 #action .head h2{font-size:clamp(30px,5vw,46px)!important}.video-placeholder{min-height:300px;aspect-ratio: .72}
 .deal-card{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px;text-align:center;border-radius:26px;padding:34px}.deal-card .eyebrow,.deal-card h2,.deal-card>p:not(.eyebrow){grid-column:1/-1}.deal-card .amt{margin:0;justify-content:center}.deal-card .btn{width:100%;min-height:70px}.deal-note{grid-column:1/-1}
 @media(max-width:650px){.announcement{font-size:10px;padding:10px 8px;letter-spacing:.02em}.hero{padding:32px 0 36px!important}.hero h1{font-size:clamp(39px,10.5vw,54px)!important}.hero-pills{gap:7px}.hero-pills span{font-size:11px;padding:9px 11px}.hero-placeholder{min-height:205px}.hero-benefits{grid-template-columns:repeat(2,1fr);gap:6px;margin:16px auto}.hero-benefits span{font-size:12px;border-right:0;border-bottom:1px solid #332b1b}.hero .btn{font-size:17px;min-height:60px}.trust-grid{grid-template-columns:repeat(2,1fr);gap:22px 10px}.trust-grid b{font-size:13px}.trust-grid small{font-size:11px}.video-placeholder{min-height:245px}.deal-card{display:flex;flex-direction:column;padding:28px 18px;gap:14px}.deal-card .amt{margin:10px 0}.deal-card .btn{min-height:62px}}
-
-/* ===== PageFlip storefront offer + auto sliders ===== */
-.pf-offer{width:min(920px,100%);margin:8px auto 0;padding:26px 20px 30px;text-align:center;border:1px solid #76571f;border-radius:24px;background:linear-gradient(145deg,#18130b,#0d0d0d);box-shadow:0 18px 55px #0008}
-.pf-offer .offer-kicker{display:inline-block;background:linear-gradient(90deg,#ffb31a,#ffcc4d);color:#111;padding:8px 16px;border-radius:999px;font-weight:900;font-size:12px;letter-spacing:.08em}
-.pf-offer h2{font-size:clamp(30px,5vw,52px);margin:14px 0 6px}
-.pf-offer .offer-copy{color:#aaa;margin:0 auto 20px;max-width:650px}
-.pf-price{display:flex;justify-content:center;align-items:baseline;gap:16px;margin:8px 0 18px}
-.pf-price .old{font-size:22px;color:#777;text-decoration:line-through}
-.pf-price .new{font-size:clamp(58px,10vw,86px);font-weight:900;letter-spacing:-.05em;color:#fff}
-.pf-save{display:inline-block;color:#10140f;background:#25d979;border-radius:999px;padding:7px 13px;font-weight:900;font-size:13px}
-.pf-buy{width:min(600px,100%);margin:0 auto;display:flex!important;min-height:64px!important;font-size:20px!important;font-weight:900!important;justify-content:center}
-.pf-buy span{font-weight:900}
-.pf-benefits{width:min(920px,100%);margin:18px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.pf-benefit{padding:15px 16px;border:1px solid #302719;border-radius:16px;background:#111;display:flex;gap:10px;text-align:left;align-items:flex-start}
-.pf-benefit b{display:block;color:#fff;font-size:15px}.pf-benefit small{display:block;color:#999;font-size:12px;margin-top:2px}.pf-benefit i{font-style:normal;color:#ffd43b;font-size:20px}
-.pf-slider-section{padding:68px 0 78px;background:#090909;overflow:hidden}
-.pf-slider-head{text-align:center;max-width:760px;margin:0 auto 28px}
-.pf-slider-head .kicker{display:inline-block;color:#d9b44a;border:1px solid #62491c;border-radius:999px;padding:7px 14px;font-size:11px;font-weight:900;letter-spacing:.12em}
-.pf-slider-head h2{font-size:clamp(34px,6vw,58px);margin:12px 0 8px}
-.pf-slider-head p{color:#aaa;margin:0}
-.pf-marquee{position:relative;width:100%;overflow:hidden;padding:12px 0 30px}
-.pf-track{display:flex;gap:22px;width:max-content;animation:pfScroll 30s linear infinite}
-.pf-track:hover{animation-play-state:paused}
-.pf-card{width:260px;flex:0 0 260px;border:1px solid #3b3b3b;border-radius:22px;background:#141414;overflow:hidden;transform:scale(.91);opacity:.68;transition:transform .5s,opacity .5s,border-color .5s,box-shadow .5s}
-.pf-card img{width:100%;height:330px;display:block;object-fit:cover;background:#1b1b1b}
-.pf-card .caption{padding:12px 14px 15px}.pf-card .caption b{font-size:14px}.pf-card .caption small{display:block;color:#999;margin-top:3px}
-.pf-card.is-main{transform:scale(1.04);opacity:1;border-color:#d9b44a;box-shadow:0 0 34px #d9b44a33}
-@keyframes pfScroll{0%{transform:translateX(0)}100%{transform:translateX(calc(-50% - 11px))}}
-.pf-review-track .pf-card{width:330px;flex-basis:330px;min-height:205px;padding:22px;background:linear-gradient(145deg,#161616,#0d0d0d)}
-.pf-review-track .pf-card img{display:none}
-.pf-review{font-size:14px;color:#d8d8d8;line-height:1.55}.pf-stars{color:#ffd43b;letter-spacing:2px;font-size:18px;margin-bottom:8px}.pf-person{margin-top:16px;font-weight:800}.pf-verified{color:#35d978;font-size:11px;margin-left:5px}
-.pf-slider-section.reviews{background:#0f0f0f}
-@media(max-width:650px){
- .pf-offer{padding:22px 14px 25px;border-radius:20px}.pf-benefits{grid-template-columns:1fr}.pf-price{gap:10px}.pf-price .old{font-size:18px}.pf-price .new{font-size:62px}
- .pf-card{width:235px;flex-basis:235px}.pf-card img{height:300px}.pf-review-track .pf-card{width:285px;flex-basis:285px}
-}
-@media(prefers-reduced-motion:reduce){.pf-track{animation:none}}
-</style>
+/* PageFlip requested offer + proof sliders */
+.pf-offer{max-width:920px;margin:18px auto 0;padding:30px 20px;border:1px solid #76571f;border-radius:24px;background:linear-gradient(145deg,#18130b,#0d0d0d);text-align:center;box-shadow:0 18px 55px #0008}
+.pf-offer .kicker{display:inline-block;background:linear-gradient(90deg,#ffb31a,#ffcc4d);color:#111;padding:8px 16px;border-radius:999px;font-weight:900;font-size:12px;letter-spacing:.08em}
+.pf-offer h2{font-size:clamp(30px,5vw,52px);margin:14px 0 8px}.pf-offer p{color:#aaa;margin:0 auto 20px}
+.pf-price{display:flex;justify-content:center;align-items:baseline;gap:14px;margin:8px 0 20px}.pf-price .old{color:#777;text-decoration:line-through;font-size:22px}.pf-price .new{font-size:clamp(58px,10vw,84px);font-weight:900;letter-spacing:-.05em}.pf-price .save{color:#10140f;background:#25d979;border-radius:999px;padding:7px 13px;font-weight:900;font-size:13px}
+.pf-buy{display:flex!important;justify-content:center;align-items:center;width:min(600px,100%);min-height:64px!important;margin:auto;font-size:20px!important;font-weight:900!important}
+.pf-benefits{max-width:920px;margin:16px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.pf-benefit{padding:15px;border:1px solid #302719;border-radius:16px;background:#111;display:flex;gap:10px;text-align:left}.pf-benefit i{font-style:normal;color:#ffd43b;font-size:20px}.pf-benefit b{display:block}.pf-benefit small{display:block;color:#999;margin-top:2px}
+.pf-slider{padding:74px 0;background:#090909;overflow:hidden}.pf-slider.alt-bg{background:#101010}.pf-slider-head{text-align:center;max-width:760px;margin:0 auto 28px}.pf-slider-head .kicker{display:inline-block;color:#d9b44a;border:1px solid #62491c;border-radius:999px;padding:7px 14px;font-size:11px;font-weight:900;letter-spacing:.12em}.pf-slider-head h2{font-size:clamp(34px,6vw,58px);margin:12px 0 8px}.pf-slider-head p{color:#aaa;margin:0}
+.pf-marquee{overflow:hidden;padding:12px 0 34px}.pf-track{display:flex;gap:22px;width:max-content;animation:pfRightLeft 30s linear infinite}.pf-track:hover{animation-play-state:paused}
+.pf-card{width:270px;flex:0 0 270px;overflow:hidden;border:1px solid #3b3b3b;border-radius:22px;background:#141414;transform:scale(.91);opacity:.62;transition:.45s;box-shadow:none}.pf-card.is-main{transform:scale(1.05);opacity:1;border-color:#d9b44a;box-shadow:0 0 34px #d9b44a33}.pf-card .shot{height:335px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#252016,#111);color:#a88943;font-weight:800;font-size:12px;letter-spacing:.08em}.pf-card .cap{padding:14px}.pf-card .cap b{display:block}.pf-card .cap small{display:block;color:#999;margin-top:4px}
+.pf-review-card{width:330px;flex-basis:330px;min-height:190px;padding:24px}.pf-stars{color:#ffd43b;font-size:19px;letter-spacing:2px}.pf-review{color:#ddd;line-height:1.55;margin-top:10px}.pf-person{margin-top:16px;font-weight:800}.pf-person small{color:#35d978;margin-left:5px}
+@keyframes pfRightLeft{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 11px))}}
+@media(max-width:650px){.pf-offer{padding:24px 14px}.pf-benefits{grid-template-columns:1fr}.pf-price{gap:9px}.pf-price .old{font-size:18px}.pf-price .new{font-size:62px}.pf-card{width:235px;flex-basis:235px}.pf-card .shot{height:300px}.pf-review-card{width:285px;flex-basis:285px}}
+@media(prefers-reduced-motion:reduce){.pf-track{animation:none}}</style>
 </head>
 <body>
 
@@ -272,20 +248,8 @@ footer .foot{align-items:center}
 <h1>Find - Upload - <span>Grow.</span></h1>
 <p class="lead">Automate your process with our special tools.</p>
 <div class="hero-pills"><span>⬇ Reel Downloader</span><span>⬆ Reel Uploader</span><span>✦ Step-by-Step Training</span></div>
-<div class="media-placeholder hero-placeholder"><span>PAGEFLIP PRODUCT SHOWCASE</span><small>Hero image / product demo placeholder — upload later</small></div>
-<div class="pf-offer" id="pfOffer">
-  <span class="offer-kicker">LIMITED TIME OFFER</span>
-  <h2>PageFlip Starter System</h2>
-  <p class="offer-copy">Everything you need to find, upload and grow — with the complete PageFlip workflow.</p>
-  <div class="pf-price"><span class="old">₹499</span><span class="new">₹299</span><span class="pf-save">SAVE 40%</span></div>
-  <a class="btn pf-buy" data-cta href="https://rzp.io/rzp/flippagepayment"><span>🚀 BUY NOW FOR ₹299 ONLY</span></a>
-</div>
-<div class="pf-benefits" aria-label="PageFlip benefits">
-  <div class="pf-benefit"><i>⚡</i><div><b>Save Hours of Work</b><small>Automate repetitive reel workflow.</small></div></div>
-  <div class="pf-benefit"><i>📈</i><div><b>Grow Multiple Pages</b><small>Manage a repeatable content process.</small></div></div>
-  <div class="pf-benefit"><i>🎓</i><div><b>Step-by-Step Training</b><small>Beginner-friendly setup and workflow.</small></div></div>
-  <div class="pf-benefit"><i>♾️</i><div><b>Lifetime Access</b><small>One-time payment, no subscription.</small></div></div>
-</div>
+<div class="media-placeholder hero-placeholder"><span>PAGEFLIP PRODUCT SHOWCASE</span><small>Hero image / product demo placeholder — upload later</small></div><div class="pf-offer"><span class="kicker">LIMITED TIME OFFER</span><h2>Get PageFlip for Less</h2><p>Everything you need to find, upload and grow with the PageFlip workflow.</p><div class="pf-price"><span class="old">₹499</span><span class="new">₹299</span><span class="save">SAVE 40%</span></div><a class="btn pf-buy" href="https://rzp.io/rzp/flippagepayment">🚀 BUY NOW FOR ₹299 ONLY</a></div>
+<div class="pf-benefits"><div class="pf-benefit"><i>⚡</i><div><b>Save Time</b><small>Make your content workflow faster and more organized.</small></div></div><div class="pf-benefit"><i>📈</i><div><b>Grow Your Pages</b><small>Use a repeatable process for consistent content publishing.</small></div></div><div class="pf-benefit"><i>🎓</i><div><b>Step-by-Step Training</b><small>Follow the complete PageFlip workflow from setup to publishing.</small></div></div><div class="pf-benefit"><i>♾️</i><div><b>Lifetime Access</b><small>One-time purchase with lifetime access to your system.</small></div></div></div>
 <div class="hero-benefits"><span>⚡ Save Hours of Work</span><span>▥ Grow Multiple Pages</span><span>✓ Beginner Friendly</span><span>∞ Lifetime Access</span></div>
 <div class="cta-row"><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">Get PageFlip for ₹299 →</a></div>
 <div class="note">Offer ends in <span id="heroCountdown">00:27:00</span></div>
@@ -305,44 +269,8 @@ footer .foot{align-items:center}
 <p class="note" style="margin-top:14px">Performance of any reel is not predicted or guaranteed. Use only content you own, have permission to use, or are licensed to reuse. PageFlip does not grant copyright permission.</p>
 </div></section>
 
-
-<section class="pf-slider-section" id="pages-built">
-  <div class="wrap">
-    <div class="pf-slider-head"><span class="kicker">REAL GROWTH PROOF</span><h2>Pages Built With Our Tool</h2><p>Showcase your actual PageFlip-powered pages here. The center card zooms as the slider moves.</p></div>
-    <div class="pf-marquee">
-      <div class="pf-track" id="pagesTrack">
-        <article class="pf-card is-main"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 1</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 2</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 3</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 4</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 5</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 1</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 2</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 3</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 4</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-        <article class="pf-card"><div class="media-placeholder" style="height:330px;border:0;border-radius:0">PAGE SCREENSHOT 5</div><div class="caption"><b>Page built with PageFlip</b><small>Replace with your real page screenshot</small></div></article>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="pf-slider-section reviews" id="reviews">
-  <div class="wrap">
-    <div class="pf-slider-head"><span class="kicker">CUSTOMER FEEDBACK</span><h2>Loved By PageFlip Users</h2><p>Use your real customer feedback here. Cards continuously move right-to-left.</p></div>
-    <div class="pf-marquee">
-      <div class="pf-track pf-review-track" id="reviewsTrack">
-        <article class="pf-card is-main"><div class="pf-stars">★★★★★</div><div class="pf-review">“The workflow made my daily posting process much more organized.”</div><div class="pf-person">Customer 1 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Simple setup and much easier to manage multiple pages.”</div><div class="pf-person">Customer 2 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“The training is easy to follow and the tools save time.”</div><div class="pf-person">Customer 3 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“A useful system for keeping content research and posting in one workflow.”</div><div class="pf-person">Customer 4 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card is-main"><div class="pf-stars">★★★★★</div><div class="pf-review">“The workflow made my daily posting process much more organized.”</div><div class="pf-person">Customer 1 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Simple setup and much easier to manage multiple pages.”</div><div class="pf-person">Customer 2 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“The training is easy to follow and the tools save time.”</div><div class="pf-person">Customer 3 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-        <article class="pf-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“A useful system for keeping content research and posting in one workflow.”</div><div class="pf-person">Customer 4 <span class="pf-verified">✓ Verified Buyer</span></div></article>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="alt"><div class="wrap">
+<section class="pf-slider" id="pages-built"><div class="wrap"><div class="pf-slider-head"><span class="kicker">PAGEFLIP RESULTS</span><h2>Pages Built With Our Tool</h2><p>Your real page screenshots can be placed here. The slider moves automatically from right to left, with the center card highlighted.</p></div><div class="pf-marquee"><div class="pf-track" id="pfPagesTrack"><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article></div></div></div></section>
+<section class="pf-slider alt-bg" id="reviews"><div class="wrap"><div class="pf-slider-head"><span class="kicker">CUSTOMER FEEDBACK</span><h2>Loved By PageFlip Users</h2><p>Your real customer reviews can be placed here. Reviews auto-slide right to left and the center card zooms in.</p></div><div class="pf-marquee"><div class="pf-track" id="pfReviewsTrack"><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article></div></div></div></section><section class="alt"><div class="wrap">
   <div class="head"><h2>Growing a page shouldn't mean 4 hours of admin a day.</h2><p>Most beginners quit because the daily routine is messy. PageFlip gives you a repeatable system.</p></div>
   <div class="two">
     <div class="panel no"><h3>Doing it alone</h3><ul><li>Hunting for ideas every single day</li><li>Files scattered across your phone</li><li>Posting only when you remember</li><li>No idea which posts actually worked</li></ul></div>
@@ -381,7 +309,7 @@ footer .foot{align-items:center}
   </div>
 </div></section>
 
-<section class="alt"><div class="wrap"><div class="promise-card"><div class="promise-icon">✓</div><div><h3>Secure Checkout. Human Support.</h3><p>Pay securely through Razorpay. For access or payment help, our support team is one WhatsApp message away.</p></div></div></div></section><section class="deal-section"><div class="wrap"><div class="deal-card"><p class="eyebrow">LIMITED-TIME OFFER</p><h2>Don't Miss This Deal 🔥</h2><p>Grab the PageFlip toolkit before the launch offer ends.</p><div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was">₹<span data-regular-price>499</span></span></div><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">🔥 GET INSTANT ACCESS</a><p class="deal-note">🔒 Secure payment · ⚡ Instant access · 💎 Lifetime access</p></div></div></section><section id="price" class="price-sec" style="display:none"><div class="wrap">
+<section class="alt"><div class="wrap"><div class="promise-card"><div class="promise-icon">✓</div><div><h3>Secure Checkout. Human Support.</h3><p>Pay securely through Razorpay. For access or payment help, our support team is one WhatsApp message away.</p></div></div></div></section><section class="deal-section" style="display:none"><div class="wrap"><div class="deal-card"><p class="eyebrow">LIMITED-TIME OFFER</p><h2>Don't Miss This Deal 🔥</h2><p>Grab the PageFlip toolkit before the launch offer ends.</p><div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was">₹<span data-regular-price>499</span></span></div><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">🔥 GET INSTANT ACCESS</a><p class="deal-note">🔒 Secure payment · ⚡ Instant access · 💎 Lifetime access</p></div></div></section><section id="price" class="price-sec" style="display:none"><div class="wrap">
   <div class="price">
     <h2>PageFlip Starter</h2><p class="sub">The complete build and growth system. One payment, no subscription.</p>
     <div class="amt"><strong>₹<span data-now-price>299</span></strong><span class="was" id="was" hidden>₹<span data-regular-price>499</span></span></div>
@@ -494,28 +422,5 @@ function render(){
 render();
 setInterval(render, 1000);
 </script>
-
-<script>
-(function(){
-  const tracks=[document.getElementById('pagesTrack'),document.getElementById('reviewsTrack')].filter(Boolean);
-  tracks.forEach(track=>{
-    const cards=[...track.querySelectorAll('.pf-card')];
-    function update(){
-      const center=window.innerWidth/2;
-      let best=null,bestD=Infinity;
-      cards.forEach(card=>{
-        const r=card.getBoundingClientRect();
-        const d=Math.abs((r.left+r.width/2)-center);
-        if(d<bestD){bestD=d;best=card;}
-        card.classList.remove('is-main');
-      });
-      if(best) best.classList.add('is-main');
-    }
-    update();
-    window.addEventListener('scroll',update,{passive:true});
-    window.addEventListener('resize',update);
-    setInterval(update,250);
-  });
-})();
-</script></body>
+<script>(function(){const ts=[document.getElementById("pfPagesTrack"),document.getElementById("pfReviewsTrack")].filter(Boolean);function u(){const x=innerWidth/2;ts.forEach(t=>{let b=null,d=1e9;t.querySelectorAll(".pf-card").forEach(e=>{const r=e.getBoundingClientRect(),q=Math.abs(r.left+r.width/2-x);e.classList.remove("is-main");if(q<d){d=q;b=e}});if(b)b.classList.add("is-main")})}u();addEventListener("resize",u,{passive:true});addEventListener("scroll",u,{passive:true});setInterval(u,200)})()</script></body>
 </html>
