@@ -310,6 +310,52 @@ button,.btn,a{touch-action:manipulation}
   .pf-card .shot{height:285px!important}
   .pf-review-card{width:265px!important;flex-basis:265px!important}
 }
+
+/* FINAL MOBILE REFERENCE POLISH */
+@media(max-width:768px){
+  .announcement{font-size:10px!important;line-height:1.45!important;padding:10px 8px!important}
+  .nav{height:68px!important}
+  .hero{padding:28px 0 14px!important}
+  .hero .social-proof{margin-bottom:16px!important}
+  .hero h1{font-size:clamp(38px,10.8vw,54px)!important;line-height:1.04!important}
+  .hero .lead{font-size:17px!important;margin:14px auto 20px!important}
+  .hero-pills{width:100%!important;display:grid!important;grid-template-columns:1fr!important;gap:9px!important;margin:18px auto 20px!important}
+  .hero-pills span{font-size:14px!important;padding:11px 12px!important;width:100%!important}
+  .hero .media-placeholder{min-height:225px!important;margin:0 auto!important}
+  .pf-offer{width:calc(100% - 24px)!important;margin:14px auto 0!important;padding:24px 14px!important;border-radius:22px!important}
+  .pf-offer h2{font-size:29px!important;line-height:1.08!important}
+  .pf-price{gap:8px!important;margin:18px 0 20px!important}
+  .pf-price .old{font-size:18px!important}
+  .pf-price .new{font-size:60px!important}
+  .pf-price .save{font-size:12px!important;padding:7px 12px!important}
+  .pf-buy{min-height:62px!important;border-radius:14px!important;font-size:17px!important;padding:13px 10px!important}
+  .pf-benefits{width:calc(100% - 24px)!important;grid-template-columns:1fr!important;gap:9px!important;margin:10px auto 0!important}
+  .pf-benefit{min-height:76px!important;padding:18px 20px!important;border-radius:18px!important;align-items:center!important}
+  .pf-benefit i{font-size:25px!important;min-width:28px!important}
+  .pf-benefit b{font-size:20px!important}
+  .pf-slider{padding:44px 0!important}
+  .pf-slider-head{padding:0 16px!important;margin-bottom:24px!important}
+  .pf-slider-head h2{font-size:36px!important;line-height:1.05!important}
+  .pf-slider-head .kicker{font-size:10px!important;padding:8px 14px!important}
+  .pf-marquee{padding:10px 0 26px!important}
+  .pf-track{gap:14px!important;animation-duration:24s!important}
+  .pf-card{width:270px!important;flex-basis:270px!important;border-radius:20px!important}
+  .pf-card .shot{height:335px!important}
+  .pf-card.is-main{transform:scale(1.045)!important}
+  .pf-review-card{width:300px!important;flex-basis:300px!important;min-height:190px!important;padding:22px!important}
+  .pf-review-card .pf-review{font-size:15px!important}
+  .sticky{padding:9px 10px calc(9px + env(safe-area-inset-bottom))!important}
+  .sticky .sticky-price{width:31%!important;font-size:14px!important}
+  .sticky .btn{min-height:54px!important;font-size:16px!important;padding:13px 7px!important}
+}
+@media(max-width:390px){
+  .hero h1{font-size:34px!important}
+  .pf-price .new{font-size:54px!important}
+  .pf-card{width:245px!important;flex-basis:245px!important}
+  .pf-card .shot{height:300px!important}
+  .pf-review-card{width:275px!important;flex-basis:275px!important}
+}
+
 </style>
 </head>
 <body>
@@ -330,11 +376,9 @@ button,.btn,a{touch-action:manipulation}
 <h1>Find - Upload - <span>Grow.</span></h1>
 <p class="lead">Automate your process with our special tools.</p>
 <div class="hero-pills"><span>⬇ Reel Downloader</span><span>⬆ Reel Uploader</span><span>✦ Step-by-Step Training</span></div>
-<div class="media-placeholder hero-placeholder"><span>PAGEFLIP PRODUCT SHOWCASE</span><small>Hero image / product demo placeholder — upload later</small></div><div class="pf-offer"><span class="kicker">LIMITED TIME OFFER</span><h2>Get PageFlip for Less</h2><p>Everything you need to find, upload and grow with the PageFlip workflow.</p><div class="pf-price"><span class="old">₹499</span><span class="new">₹299</span><span class="save">SAVE 40%</span></div><a class="btn pf-buy" href="https://rzp.io/rzp/flippagepayment">🚀 BUY NOW FOR ₹299 ONLY</a></div>
-<div class="pf-benefits"><div class="pf-benefit"><i>⚡</i><div><b>Save Time</b><small>Make your content workflow faster and more organized.</small></div></div><div class="pf-benefit"><i>📈</i><div><b>Grow Your Pages</b><small>Use a repeatable process for consistent content publishing.</small></div></div><div class="pf-benefit"><i>🎓</i><div><b>Step-by-Step Training</b><small>Follow the complete PageFlip workflow from setup to publishing.</small></div></div><div class="pf-benefit"><i>♾️</i><div><b>Lifetime Access</b><small>One-time purchase with lifetime access to your system.</small></div></div></div>
-<div class="hero-benefits"><span>⚡ Save Hours of Work</span><span>▥ Grow Multiple Pages</span><span>✓ Beginner Friendly</span><span>∞ Lifetime Access</span></div>
-<div class="cta-row"><a class="btn" data-cta href="https://rzp.io/rzp/flippagepayment">Get PageFlip for ₹299 →</a></div>
-<div class="note">Offer ends in <span id="heroCountdown">00:27:00</span></div>
+<div class="media-placeholder hero-placeholder"><span>PAGEFLIP PRODUCT SHOWCASE</span><small>Hero image / product demo placeholder — upload later</small></div><div class="pf-offer" id="pfOffer"><span class="kicker">LIMITED TIME OFFER</span><h2>Get PageFlip for Less</h2><div class="pf-price"><span class="old" id="pfOldPrice">₹499</span><span class="new" id="pfNewPrice">₹299</span><span class="save" id="pfSave">SAVE 40%</span></div><a class="btn pf-buy" id="pfBuy" href="https://rzp.io/rzp/flippagepayment">🚀 BUY NOW FOR ₹299 ONLY</a></div>
+<div class="pf-benefits"><div class="pf-benefit"><i>⚡</i><div><b>Save Time</b></div></div><div class="pf-benefit"><i>📈</i><div><b>Grow Your Pages</b></div></div><div class="pf-benefit"><i>🎓</i><div><b>Step-by-Step Training</b></div></div><div class="pf-benefit"><i>♾️</i><div><b>Lifetime Access</b></div></div></div>
+
 </div></section>
 <section class="media-strip"><div class="wrap"><div class="top-gallery"><div class="media-placeholder gallery-shot"><span>PRODUCT IMAGE 01</span><small>Image placeholder</small></div><div class="media-placeholder gallery-shot"><span>PRODUCT IMAGE 02</span><small>Image placeholder</small></div><div class="media-placeholder gallery-shot"><span>PRODUCT IMAGE 03</span><small>Image placeholder</small></div></div></div></section>
 
@@ -351,8 +395,8 @@ button,.btn,a{touch-action:manipulation}
 <p class="note" style="margin-top:14px">Performance of any reel is not predicted or guaranteed. Use only content you own, have permission to use, or are licensed to reuse. PageFlip does not grant copyright permission.</p>
 </div></section>
 
-<section class="pf-slider" id="pages-built"><div class="wrap"><div class="pf-slider-head"><span class="kicker">PAGEFLIP RESULTS</span><h2>Pages Built With <span style="color:#ffd400">Our Tool</span></h2><p>Your real page screenshots can be placed here. The slider moves automatically from right to left, with the center card highlighted.</p></div><div class="pf-marquee"><div class="pf-track" id="pfPagesTrack"><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article></div></div></div></section>
-<section class="pf-slider alt-bg" id="reviews"><div class="wrap"><div class="pf-slider-head"><span class="kicker">CUSTOMER FEEDBACK</span><h2>Loved By PageFlip Users</h2><p>Your real customer reviews can be placed here. Reviews auto-slide right to left and the center card zooms in.</p></div><div class="pf-marquee"><div class="pf-track" id="pfReviewsTrack"><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article></div></div></div></section><section class="alt"><div class="wrap">
+<section class="pf-slider" id="pages-built"><div class="wrap"><div class="pf-slider-head"><span class="kicker">PAGEFLIP RESULTS</span><h2>Pages Built With <span style="color:#ffd400">Our Tool</span></h2></div><div class="pf-marquee"><div class="pf-track" id="pfPagesTrack"><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 1</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 2</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 3</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 4</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article><article class="pf-card"><div class="shot">PAGE SCREENSHOT 5</div><div class="cap"><b>Page built with PageFlip</b><small>Replace with your actual screenshot</small></div></article></div></div></div></section>
+<section class="pf-slider alt-bg" id="reviews"><div class="wrap"><div class="pf-slider-head"><span class="kicker">CUSTOMER FEEDBACK</span><h2>Loved By PageFlip Users</h2></div><div class="pf-marquee"><div class="pf-track" id="pfReviewsTrack"><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Add your real customer review here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Add your real customer review here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Add your real customer review here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Add your real customer review here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 1 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 2 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 3 <small>✓ Verified Buyer</small></div></article><article class="pf-card pf-review-card"><div class="pf-stars">★★★★★</div><div class="pf-review">“Your real customer review goes here.”</div><div class="pf-person">Customer 4 <small>✓ Verified Buyer</small></div></article></div></div></div></section><section class="alt"><div class="wrap">
   <div class="head"><h2>Growing a page shouldn't mean 4 hours of admin a day.</h2><p>Most beginners quit because the daily routine is messy. PageFlip gives you a repeatable system.</p></div>
   <div class="two">
     <div class="panel no"><h3>Doing it alone</h3><ul><li>Hunting for ideas every single day</li><li>Files scattered across your phone</li><li>Posting only when you remember</li><li>No idea which posts actually worked</li></ul></div>
@@ -473,6 +517,17 @@ function render(){
   const p = launchLive ? CONFIG.launch : CONFIG.regular;
 
   $("[data-now-price]").forEach(e => e.textContent = p.price);
+  const pfOld = document.getElementById("pfOldPrice");
+  const pfNew = document.getElementById("pfNewPrice");
+  const pfSave = document.getElementById("pfSave");
+  const pfBuy = document.getElementById("pfBuy");
+  if (pfNew) pfNew.textContent = "₹" + p.price;
+  if (pfOld) pfOld.textContent = launchLive ? "₹499" : "₹299";
+  if (pfSave) pfSave.textContent = launchLive ? "SAVE 40%" : "REGULAR PRICE";
+  if (pfBuy) {
+    pfBuy.href = p.url;
+    pfBuy.textContent = "🚀 BUY NOW FOR ₹" + p.price + " ONLY";
+  }
   $("[data-launch-price]").forEach(e => e.textContent = CONFIG.launch.price);
   $("[data-regular-price]").forEach(e => e.textContent = CONFIG.regular.price);
   $("[data-cta]").forEach(e => {
